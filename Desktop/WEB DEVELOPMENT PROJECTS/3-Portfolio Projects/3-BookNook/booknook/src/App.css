@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/139306/pexels-photo-139306.jpeg?cs=srgb&dl=pexels-fwstudio-139306.jpg&fm=jpg");
+  background-size: cover;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+  top: 0px;
+  height: 70px;
+  display: flex;
+  color: white;
+  background-color: black;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.logo {
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+.logo-div {
+  flex: 3;
+}
+
+.search-bar {
+  flex: 9;
+}
+
+.search-bar input {
+  height: 30px;
+  font-family: "Oswald", sans-serif;
+  width: 50%;
+}
+
+.search-bar button {
+  height: 36px;
+  font-family: "Oswald", sans-serif;
+}
+/* CARD */
+
+.card {
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  margin-top: 120px;
+  margin-left: 55px;
+  margin-right: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardImage {
+  height: 70%;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.cardImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  background-color: black;
+  color: white;
+  height: 30%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.card-title {
+  margin: 0px;
+  margin-top: 10px;
+  font-family: "Julee", cursive;
+  letter-spacing: 2px;
+}
+
+.card-author {
+  flex: 6;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Julee", cursive;
+}
+
+.card-buy {
+  flex: 6;
+
+  height: 35px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-family: "Julee", cursive;
+  letter-spacing: 2px;
+}
+
+.card-container {
+  /* margin-left: 80px;
+  margin-right: 80px; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+  width: 100%;
+
+  padding-bottom: 50px;
+}
+
+.cardBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 950px) {
+  .logo {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .card-container {
+    /* margin-left: 80px;
+  margin-right: 80px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    width: 100%;
+    justify-content: center;
+
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .cardBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+}

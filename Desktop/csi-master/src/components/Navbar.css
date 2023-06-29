@@ -1,0 +1,249 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+* {
+  font-family: Montserrat;
+
+  box-sizing: border-box;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  /* line-height: 1.5; */
+  /* font-family: Montserrat, helvetica, arial, sans-serif; */
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #202742;
+  /* font-family: Montserrat, helvetica, arial, sans-serif; */
+}
+
+a {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+.nav-header {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 3;
+  /* margin-top: -47px; */
+  padding: 4px 0 16px 0;
+  background: #202742;
+  /* backdrop-filter: blur(19px); */
+  margin-right: 10%;
+  border-bottom: 2px solid #0663e5;
+  box-shadow: 0rem 0rem 0.2rem #0663e5;
+}
+
+#csi-logo {
+  position: absolute;
+  /* border: 2px solid white; */
+  height: 100%;
+  left: 5%;
+  top: 6px;
+}
+
+#csi-logo img {
+  width: 110%;
+}
+
+.nav-header ul {
+  margin: 0;
+  padding: 0 0 px 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-header li a {
+  /* margin-left: 100px; */
+  display: block;
+  /* padding: 20px 0px 4px 0px; */
+  text-decoration: none;
+  margin-top: 10px;
+  height: 35px;
+}
+
+.bg-join {
+  background-color: #0663e5;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Montserrat, helvetica, arial, sans-serif;
+  padding: 10px 5px 30px 25px !important;
+  /* height: 30px; */
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 120px;
+}
+
+/* .nav-header li a:hover,
+.nav-header .menu-btn:hover {
+    background-color: #fff;
+} */
+
+.nav-header .logo {
+  color: #0f0f0d;
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 2px 0px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.nav-header .menu {
+  clear: both;
+  margin-top: 0;
+  max-height: 0px;
+  transition: all 0.3s ease-out;
+}
+
+/* menu icon */
+
+.nav-header .menu-icon {
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.nav-header .menu-icon .navicon {
+  background: #ffffff;
+  display: block;
+  height: 4px;
+  position: relative;
+  /* padding: -10px 0; */
+  margin-top: 12px;
+  transition: background 0.2s ease-out;
+  width: 29px;
+}
+
+.nav-header .menu-icon .navicon:before,
+.nav-header .menu-icon .navicon:after {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.nav-header .menu-icon .navicon:before {
+  top: 10px;
+}
+
+.nav-header .menu-icon .navicon:after {
+  top: -10px;
+}
+
+/* menu btn */
+
+.nav-header .menu-btn {
+  display: none;
+}
+
+.nav-header .menu-btn:checked ~ .menu {
+  max-height: 4000px;
+  margin-top: 100px;
+}
+
+.nav-header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.nav-header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.nav-header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.link {
+  display: block;
+
+  position: relative;
+  border: none;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  font-family: Montserrat, helvetica, arial, sans-serif;
+  font-weight: 700;
+}
+
+.link:active,
+.link:focus,
+.link:hover {
+  outline: 0;
+}
+
+.link:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #0663e5;
+  width: 0px;
+  height: 2px;
+
+  transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+}
+
+.link:hover {
+  color: white;
+}
+
+.link:hover:before {
+  width: 90%;
+}
+
+@media (min-width: 875px) {
+  .nav-header li {
+    float: left;
+  }
+
+  #csi-logo {
+    position: absolute;
+    /* border: 2px solid black; */
+    height: 100%;
+    left: 10%;
+    top: -7px;
+  }
+
+  .nav-header .menu {
+    margin-top: 0px;
+  }
+
+  .nav-header li a {
+    padding: 12px 0px 0px 0px;
+    margin-left: 30px;
+  }
+
+  .menu-icon {
+    float: right;
+  }
+
+  .nav-header .menu {
+    clear: none;
+    float: right;
+    padding-right: 5rem;
+
+    max-height: none;
+  }
+
+  .nav-header .menu-icon {
+    display: none;
+  }
+}

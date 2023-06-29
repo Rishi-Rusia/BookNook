@@ -1,0 +1,87 @@
+.image-component-main {
+  background-color: #c0d4ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.gallery-div {
+  width: 350px;
+  height: 350px;
+  align-items: center;
+  display: flex;
+
+  justify-content: space-between;
+
+  top: 50%;
+
+  /* background-color: #edf5ff; */
+}
+
+.div1 {
+  height: 300px;
+  width: 150px;
+  /* background-color: red; */
+  /* background-image: url("https://i.pinimg.com/originals/a0/e4/1e/a0e41ed6f4accd5f7ac4b755c187476f.jpg"); */
+
+  /* background-size: cover; */
+  margin-left: 5%;
+  border-radius: 5%;
+}
+
+.div2 {
+  height: 300px;
+  width: 150px;
+  /* background-color: blue; */
+  margin-right: 5%;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div21 {
+  height: 150px;
+  /* background-color: green; */
+  /* background-image: url("https://www.localguidesconnect.com/t5/image/serverpage/image-id/999337i22CF399E12581612/image-size/large?v=v2&px=999"); */
+  /* background-size: cover; */
+  border-radius: 5%;
+}
+
+.div22 {
+  height: 140px;
+  /* background-color: yellow; */
+  /* background-image: url("https://lh3.googleusercontent.com/d0y1e7kDfTKgxzmbyL_3wcxKz6HFlWaiC0SUfEGChnQjN8mUwfqTA5eJ3zm0UPUoGct8oc6S-YAqitnfYTfb8mroKHom42v3Vob7A4ae=rw-e365-w1200-v1"); */
+  /* background-size: cover; */
+  border-radius: 5%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.view-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 0%;
+}
+
+.modal-body img {
+  margin: 2%;
+  height: 300px;
+  width: 420px;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-body img {
+    margin: 2%;
+    height: 300px;
+    width: 300px;
+  }
+}

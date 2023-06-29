@@ -1,0 +1,9 @@
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  border-top: 2px solid blue;
+}

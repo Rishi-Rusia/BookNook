@@ -1,0 +1,31 @@
+body {
+  background-color: #fff;
+}
+
+.gallery {
+  margin-top: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 7%;
+}
+
+.our-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-component {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    margin-top: 27%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+  }
+}
